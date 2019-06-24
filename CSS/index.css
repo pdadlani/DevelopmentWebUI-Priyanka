@@ -1,0 +1,288 @@
+.width-100 {
+  width: 100%;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Georgia', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Georgia', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1E80AA;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.main-navigation .nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.main-navigation .nav-container h1 {
+  font-size: 3rem;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container h1 {
+    font-size: 2rem;
+    padding: 10px;
+    color: white;
+  }
+}
+.main-navigation .nav-container .nav {
+  display: flex;
+}
+.main-navigation .nav-container .nav .nav-link {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav .nav-link {
+    padding: 10px 10px;
+  }
+}
+.main-navigation .nav-container .nav .nav-link:hover {
+  background-color: #632A50;
+  color: #1E80AA;
+  border-radius: 5%;
+}
+.body-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.body-container .content {
+  width: 50%;
+}
+.body-container .content h2 {
+  font-size: 2rem;
+  padding: 10px;
+  background-color: #632A50;
+  margin: 5px;
+}
+.body-container .content p {
+  padding: 10px 20px;
+}
+.nav-footer {
+  background-color: #1E80AA;
+  max-width: 880px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 1200px;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #6B0504;
+  background-color: #4D545D;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #4D545D;
+  background-color: #6B0504;
+  border: 2px solid #632A50;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  background-color: #4D545D;
+  color: #082A47;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
