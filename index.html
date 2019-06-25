@@ -4,6 +4,11 @@
   <title>Corporate Event Planner</title>
   <link rel="icon" href="./images/lambda.jpg">
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- required meta tags-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,26 +19,38 @@
   
   <!-- HEADER COMPONENT -->
   <header class="main-navigation">
-    <div class="container nav-container">
-      <h1 class="logo-heading">Corporte Event Planning</h1>
-      <nav class="nav">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#">About</a>
-        <a class="nav-link" href="#">Services</a>
-        <a class="nav-link" href="#">Portfolio</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-        <a class="nav-link" href="#">Log In</a>
-      </nav>
-    </div>
+    <nav class="container nav-container">
+      <div class='nav-img-container'>
+        <a href="index.html">
+          <img class='nav-logo logo-dark' alt='logo' src='images/lambda.jpg'>
+          <img class='nav-logo logo-light' alt='logo' src='images/lambda-light.png'>
+        </a>
+      </div>
+      <div class="nav-all">
+        <div class="nav-links">
+          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+        <div class="log-in">
+          <a class="nav-link-log-in" href="#">Log In</a>
+        </div>
+      </div>
+    </nav>
   </header>
 
+
+  <img class='temp img-fade' src="./images/alcohol-bar.jpg" />
+
   <!-- CAROUSEL COMPONENT -->
-  <div class="carousel">
+  <!-- <div class="carousel">
     <div class="left-button"><</div> 
     <img class='fade' src="./images/lightsparty.jpg" />
     <img class='fade' src="./images/tableparty.jpg" />
     <div class="right-button">></div>
-  </div>
+  </div> -->
 
   <div class="container body-container">
     <section class="content top">
@@ -52,7 +69,7 @@
     </section>
   </div>
 
-  <footer class="footer nav-footer">
+  <footer class="footer home-footer">
     <p>Copyright Corporate Event Planning 2019!</p>
     <a class="nav-link" href="contact.html">Contact</a>
   </footer>
