@@ -186,6 +186,8 @@ img {
   background-color: #4D545D;
   color: #FBFBFB;
   font-family: 'Vollkorn SC', serif;
+  padding: 10px;
+  border-radius: 5px;
 }
 .main-container .content .content-img-text {
   display: flex;
@@ -196,6 +198,8 @@ img {
 }
 .main-container .content .content-img-text .content-img {
   width: 50%;
+  border: 1px solid #632A50;
+  border-radius: 10px;
 }
 .main-container .content .content-img-text p {
   padding: 20px;
