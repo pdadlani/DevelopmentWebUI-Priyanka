@@ -34,15 +34,11 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-family: 'Georgia';
 }
 img {
   max-width: 100%;
   height: auto;
-}
-.container {
-  max-width: 880px;
-  width: 100%;
-  margin: 0 auto;
 }
 .main-navigation {
   width: 100%;
@@ -59,6 +55,7 @@ img {
   align-items: center;
   flex-direction: row;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container {
@@ -83,6 +80,7 @@ img {
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav-img-container a .logo-light {
     display: block;
+    margin: 20px;
   }
 }
 .main-navigation .nav-container .nav-all {
@@ -90,6 +88,14 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
 .main-navigation .nav-container .nav-all .nav-links {
   display: flex;
@@ -114,37 +120,64 @@ img {
   }
 }
 .main-navigation .nav-container .nav-all .log-in .nav-link-log-in {
-  padding: 15px;
+  padding: 30px;
   background-color: #082A47;
   color: #FBFBFB;
 }
 .main-navigation .nav-container .nav-all .log-in .nav-link-log-in:hover {
   background-color: #FBFBFB;
   color: #082A47;
+  transition-duration: 1s;
 }
-.body-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+.main-container {
+  max-width: inherit;
+  padding: inherit;
 }
-.body-container .content {
-  width: 50%;
+.main-container .img-and-text .img-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #632A50;
+  background-color: #FFFFFF80;
+  padding: 20px;
+  border-radius: 10px;
 }
-.body-container .content h2 {
+.main-container .img-and-text .img-text h1 {
+  font-size: 4.5rem;
+}
+.main-container .img-and-text .img-text .btn-quote {
   font-size: 2rem;
-  padding: 10px;
-  color: #FBFBFB;
-  background-color: #632A50;
-  margin: 5px;
-}
-.body-container .content p {
-  padding: 10px 20px;
+  color: #082A47;
   background-color: #4D545D;
+  border-radius: 2%;
+  padding: 10px;
+}
+.main-container .img-and-text .img-text .btn-quote:hover {
+  background-color: #082A47;
+  color: #FBFBFB;
+}
+.main-container .motto {
+  font-family: 'Montserrat', sans-serif;
+  color: #4D545D;
+}
+.main-container .motto h3 {
+  margin: 0 auto;
+}
+.main-container .content {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+.main-container .content h2 {
+  background-color: #4D545D;
+  color: #FBFBFB;
 }
 .footer {
-  background-color: #1E80AA;
-  max-width: 880px;
+  background-color: #632A50;
   width: 100%;
   padding: 20px;
   display: flex;
@@ -153,7 +186,12 @@ img {
   flex-direction: column;
 }
 .temp {
-  opacity: 0.5;
+  opacity: 0.8;
+}
+@media (max-width: 500px) {
+  .temp {
+    display: none;
+  }
 }
 .carousel {
   width: 100%;
@@ -205,6 +243,29 @@ img {
 .carousel img {
   width: 100%;
   display: none;
+}
+.footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer .nav-link {
+  color: #FBFBFB;
+  font-size: 1.3rem;
+}
+.footer .nav-link:hover {
+  background-color: #FBFBFB;
+  color: #1E80AA;
+}
+@media (max-width: 500px) {
+  .footer .nav-link {
+    color: #632A50;
+  }
+  .footer .nav-link:hover {
+    background-color: #632A50;
+    color: #FBFBFB;
+  }
+}
+.footer p {
+  font-size: 1rem;
 }
 html,
 body,
