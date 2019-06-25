@@ -73,16 +73,19 @@
         }
       }
 
-      .log-in .nav-link-log-in {
-        padding: 30px;
-        background-color: @cep-color-dark-blue;
-        color: @cep-color-white;
+      .log-in {
+        z-index: 1;
 
-        &:hover {
-          background-color: @cep-color-white;
-          color: @cep-color-dark-blue;
-          transition-duration: 1s;
+        .nav-link-log-in {
+          padding: 30px;
+          background-color: @cep-color-dark-blue;
+          color: @cep-color-white;
 
+          &:hover {
+            background-color: @cep-color-white;
+            color: @cep-color-dark-blue;
+            transition-duration: 1s;
+          }
         }
       }
     }

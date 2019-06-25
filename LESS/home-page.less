@@ -42,6 +42,15 @@
 
     h3 {
       margin: 0 auto;
+      font-weight: bold;
+      font-size: 2.5rem;
+      font-family: 'Vollkorn SC', serif;
+
+    }
+
+    h4 {
+      font-size: 1.3rem;
+      line-height: 1.5;
     }
   }
   .content {
@@ -52,6 +61,25 @@
     h2 {
       background-color: @cep-color-grey;
       color: @cep-color-white;
+      font-family: 'Vollkorn SC', serif;
+
+    }
+
+    .content-img-text {
+      .flex(space-evenly, center, row);
+      padding-top: 10px;
+      
+      .content-img {
+        width: 50%;
+      }
+
+      p {
+        padding: 20px;
+      }
+    }
+
+    .middle {
+      .flex(space-evenly, center, row-reverse);
     }
   }
 }
