@@ -322,50 +322,15 @@ img {
   flex-direction: column;
 }
 .carousel {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 500px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 16px;
-}
-.carousel .left-button,
-.carousel .right-button {
-  display: flex;
-  justify-content: center;
-  align-items: none;
-  flex-direction: row;
-  color: #6B0504;
-  background-color: #4D545D;
-  font-size: 40px;
-  border-radius: 50%;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-.carousel .left-button:hover,
-.carousel .right-button:hover {
-  color: #4D545D;
-  background-color: #6B0504;
-  border: 2px solid #632A50;
-}
-.carousel .left-button {
-  top: 50%;
-  left: 25px;
-  transform: translate(0, -50%);
-}
-.carousel .right-button {
-  top: 50%;
-  right: 25px;
-  transform: translate(0, -50%);
+  height: 1000px;
 }
 .carousel img {
-  width: 100%;
   display: none;
+  width: 80%;
 }
 .footer {
   font-family: Georgia, 'Times New Roman', Times, serif;
