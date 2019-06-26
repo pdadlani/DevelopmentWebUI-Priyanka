@@ -1,8 +1,14 @@
 .main-container {
-  max-width: inherit;
-  padding: inherit;
 
   .img-and-text {
+    background-image: url("../images/alcohol-bar.jpg");
+    background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
 
     .img-text {
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -12,13 +18,14 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: @cep-color-purple;
-      background-color: #FFFFFF80;
-      padding: 20px 60px 20px 20px;
+      color: @cep-color-white;
+      background-color: @cep-color-dark-blue-transparent;
+      padding: 60px;
       border-radius: 10px;
 
       h1 {
         font-size: 4.5rem;
+        z-index: 1;
       }
 
       .btn-quote {
@@ -29,7 +36,7 @@
         padding: 10px;
 
         &:hover {
-          background-color: @cep-color-dark-blue;
+          background-color: @cep-color-purple;
           color: @cep-color-white;
         }
       }
@@ -77,8 +84,7 @@
       
       .content-img {
         width: 50%;
-        border: 1px solid @cep-color-purple;
-        border-radius: 10px;
+        border-radius: 5px;
 
         @media @mobile {
           width: @widthAuto;
