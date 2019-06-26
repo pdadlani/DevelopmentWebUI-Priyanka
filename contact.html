@@ -14,6 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="Tabs.js" async></script>
+  <script src="index.js" async></script>
 </head>
 <body>
   <!-- HEADER COMPONENT -->
@@ -41,13 +42,22 @@
   </header>
 
   <section class='contact'>
-    <form method="post" action="#">
+    <!-- <form method="post" action="#">
       <div class="row gtr-uniform">
-        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+        <div class="input col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+        <div class="input col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+        <div class="input col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
         <button><input type="submit" value="Send Message" class="primary" /></button>
       </div>
+    </form> -->
+    <form action="">
+      <label for=""> First Name:</label>
+      <input class='firstName' type='text' name='firstname' value='' placeholder="Your First Name">
+      <label for="">Last Name:</label>
+      <input class='lastName' type='text' name='lastname' value='' placeholder="Your Last Name">
+      <label for="">Email:</label>
+      <input class='email' type='text' name='email' value='' placeholder="Your Email Address">
+      <input class='formSubmit' type='submit' value="Submit Your Info">
     </form>
   </section>
 
