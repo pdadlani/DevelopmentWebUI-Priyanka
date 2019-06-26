@@ -46,6 +46,7 @@
   .motto {
     font-family: 'Montserrat', sans-serif;
     color: @cep-color-grey;
+    // background-color: grey;
 
     h3 {
       margin: 0 auto;
@@ -61,16 +62,21 @@
     }
   }
   .content {
-    max-width: 1140px;
+    // max-width: 1140px;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding: 80px 0px;
   
     h2 {
-      background-color: @cep-color-grey;
-      color: @cep-color-white;
+      // background-color: @cep-color-grey;
+      // color: @cep-color-white;
       font-family: 'Vollkorn SC', serif;
       padding: 10px;
       border-radius: 5px;
+      color: @cep-color-white;
+
+      &:last-child {
+        color: @cep-color-grey;
+      }
 
     }
 
@@ -96,49 +102,36 @@
         padding: 20px;
       }
     }
-
-    .middle {
-      .flex(space-evenly, center, row-reverse);
-
-      @media @mobile {
-        .flex(space-evenly, center, column);
-      }
-    }
   }
 }
 
-// .body-container {
+.first {
+  .flex(space-evenly, center, row-reverse);
+  background-color: @cep-color-light-blue;
+  margin-left: 0;
 
-//   .img-text {
-//     position: relative;
-//     z-index: 2;
-//     top: 50%;
-//   }
-//   .flex(center, center);
+  // @media @mobile {
+  //   .flex(space-evenly, center, column);
+  // }
+}
 
-//   .content {
-//     width: 50%;
+.second {
+  background-color: @cep-color-grey;
 
+  @media @mobile {
+    .flex(space-evenly, center, column);
+  }
+}
 
-//     h2 {
-//       font-size: 2.0rem;
-//       padding: 10px;
-//       color: @cep-color-white;
-//       background-color: @cep-color-purple;
-//       margin: 5px;
-//     }
-
-//     p {
-//       padding: 10px 20px;
-//       background-color: @cep-color-grey;
-//     }
-//   }
-
-
-// }
+.third {
+  p {
+    color: @cep-color-grey;
+  }
+}
 
 .footer {
   background-color: @cep-color-purple;
+  color: @cep-color-white;
   // max-width: 880px;
   .width-100();
   padding: 20px;

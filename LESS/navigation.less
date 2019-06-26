@@ -54,21 +54,10 @@
         .flex(space-between, center, row);
 
         .nav-link {
-          color: @cep-color-white;
-
-          &:hover {
-            background-color: @cep-color-white;
-            color: @cep-color-light-blue;
-          }
+          .navLinkStyle(@cep-color-white, @cep-color-light-blue);
 
           @media @mobile {
-            color: @cep-color-purple;
-
-
-            &:hover {
-              background-color: @cep-color-purple;
-              color: @cep-color-white;
-            }
+            .navLinkStyle(@cep-color-purple, @cep-color-white);
           }
         }
       }
@@ -78,63 +67,17 @@
 
         .nav-link-log-in {
           padding: 30px;
-          background-color: @cep-color-dark-blue;
-          color: @cep-color-white;
+          .navLinkStyle(@cep-color-white, @cep-color-dark-blue);
+
+          &:hover {
+            transition-duration: 1s;
+          }
 
           @media @mobile {
             padding: 20px;
-          }
-
-          &:hover {
-            background-color: @cep-color-white;
-            color: @cep-color-dark-blue;
-            transition-duration: 1s;
           }
         }
       }
     }
   }
 }
-
-
-// .main-navigation {
-//   .flex(space-between, center, column);
-//   .width-100();
-//   background-color: @cep-color-light-blue;
-//   max-width: 880px;
-//   margin: 0 auto;
-
-//   .nav-container {
-//     .flex(center, center, column);
-//     padding: 20px;
-
-//     h1 {
-//       font-size: 3.0rem;
-//       padding: 20px;
-
-//       @media @mobile {
-//         font-size: 2rem;
-//         padding: 10px;
-//         color: white;
-//       }
-//     }
-
-//     .nav {
-//       display: flex;
-
-//       .nav-link {
-//         padding: 10px 20px;
-//         font-size: 1rem;
-
-//         @media @mobile {
-//           padding: 10px 10px;
-//         }
-
-//         &:hover {
-//           background-color: @cep-color-purple;
-//           color: @cep-color-light-blue;
-//         }
-//       }
-//     }
-//   }
-// }

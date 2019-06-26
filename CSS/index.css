@@ -35,6 +35,7 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
   font-family: 'Georgia';
+  color: #FBFBFBEE;
 }
 img {
   max-width: 100%;
@@ -105,18 +106,20 @@ img {
 }
 .main-navigation .nav-container .nav-all .nav-links .nav-link {
   color: #FBFBFB;
+  background-color: #1E80AA;
 }
 .main-navigation .nav-container .nav-all .nav-links .nav-link:hover {
-  background-color: #FBFBFB;
   color: #1E80AA;
+  background-color: #FBFBFB;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav-all .nav-links .nav-link {
     color: #632A50;
+    background-color: #FBFBFB;
   }
   .main-navigation .nav-container .nav-all .nav-links .nav-link:hover {
-    background-color: #632A50;
     color: #FBFBFB;
+    background-color: #632A50;
   }
 }
 .main-navigation .nav-container .nav-all .log-in {
@@ -124,18 +127,20 @@ img {
 }
 .main-navigation .nav-container .nav-all .log-in .nav-link-log-in {
   padding: 30px;
-  background-color: #082A47;
   color: #FBFBFB;
+  background-color: #082A47;
+}
+.main-navigation .nav-container .nav-all .log-in .nav-link-log-in:hover {
+  color: #082A47;
+  background-color: #FBFBFB;
+}
+.main-navigation .nav-container .nav-all .log-in .nav-link-log-in:hover {
+  transition-duration: 1s;
 }
 @media (max-width: 500px) {
   .main-navigation .nav-container .nav-all .log-in .nav-link-log-in {
     padding: 20px;
   }
-}
-.main-navigation .nav-container .nav-all .log-in .nav-link-log-in:hover {
-  background-color: #FBFBFB;
-  color: #082A47;
-  transition-duration: 1s;
 }
 .main-container .img-and-text {
   background-image: url("../images/alcohol-bar.jpg");
@@ -190,16 +195,17 @@ img {
   line-height: 1.5;
 }
 .main-container .content {
-  max-width: 1140px;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 80px 0px;
 }
 .main-container .content h2 {
-  background-color: #4D545D;
-  color: #FBFBFB;
   font-family: 'Vollkorn SC', serif;
   padding: 10px;
   border-radius: 5px;
+  color: #FBFBFB;
+}
+.main-container .content h2:last-child {
+  color: #4D545D;
 }
 .main-container .content .content-img-text {
   display: flex;
@@ -226,36 +232,37 @@ img {
 .main-container .content .content-img-text p {
   padding: 20px;
 }
-.main-container .content .middle {
+.first {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
+  background-color: #1E80AA;
+  margin-left: 0;
+}
+.second {
+  background-color: #4D545D;
 }
 @media (max-width: 500px) {
-  .main-container .content .middle {
+  .second {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
   }
 }
+.third p {
+  color: #4D545D;
+}
 .footer {
   background-color: #632A50;
+  color: #FBFBFB;
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: column;
-}
-.temp {
-  opacity: 0.8;
-}
-@media (max-width: 500px) {
-  .temp {
-    display: none;
-  }
 }
 .carousel {
   width: 100%;
@@ -316,11 +323,12 @@ img {
 }
 @media (max-width: 500px) {
   .footer .nav-link {
-    color: #632A50;
+    color: #FBFBFB;
+    background-color: #632A50;
   }
   .footer .nav-link:hover {
-    background-color: #632A50;
-    color: #FBFBFB;
+    color: #632A50;
+    background-color: #FBFBFB;
   }
 }
 .footer p {
