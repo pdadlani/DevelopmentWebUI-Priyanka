@@ -1,9 +1,11 @@
 // File for all css mixins
 
+// width 100%
 .width-100 {
   width: 100%;
 }
 
+// flex: justify-content, align-items, flex-direction
 .flex(@jc: none, @ai: none, @dir: row) {
   display: flex;
   justify-content: @jc;
@@ -11,6 +13,7 @@
   flex-direction: @dir;
 }
 
+// navigation links styling - color
 .navLinkStyle (@navColor, @navBackgroundColor) {
   color: @navColor;
   background-color: @navBackgroundColor;
@@ -19,5 +22,16 @@
     color: @navBackgroundColor;
     background-color: @navColor;
   }
+}
 
+// media - tablet size flex
+.flexTablet {
+  @media @tablet {
+    .flex(space-evenly, center, column);
+  }
+}
+
+// font selection
+.fontFamily {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }

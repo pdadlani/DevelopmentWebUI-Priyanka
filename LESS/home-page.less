@@ -2,7 +2,7 @@
 
   .img-and-text {
     background-image: url("../images/alcohol-bar.jpg");
-    background-color: #cccccc;
+    // background-color: #cccccc;
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,8 +10,12 @@
     position: relative;
     opacity: 0.8;
 
+    @media @mobile {
+      background-image: none;
+    }
+
     .img-text {
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      .fontFamily();
       max-width: 1140px;
       margin: 0 auto;
       position: absolute;
@@ -46,7 +50,7 @@
   .motto {
     font-family: 'Montserrat', sans-serif;
     color: @cep-color-grey;
-    // background-color: grey;
+    .flexTablet();
 
     h3 {
       margin: 0 auto;
@@ -84,7 +88,7 @@
       .flex(space-evenly, center, row);
       padding-top: 10px;
 
-      @media @mobile {
+      @media @tablet {
         display: block;
       }
       
@@ -92,7 +96,7 @@
         width: 50%;
         border-radius: 5px;
 
-        @media @mobile {
+        @media @tablet {
           width: @widthAuto;
           margin: 0 auto;
         }
@@ -109,30 +113,23 @@
   .flex(space-evenly, center, row-reverse);
   background-color: @cep-color-light-blue;
   margin-left: 0;
-
-  // @media @mobile {
-  //   .flex(space-evenly, center, column);
-  // }
 }
 
 .second {
   background-color: @cep-color-grey;
-
-  @media @mobile {
-    .flex(space-evenly, center, column);
-  }
+  .flexTablet();
 }
 
 .third {
   p {
     color: @cep-color-grey;
   }
+  .flexTablet();
 }
 
 .footer {
   background-color: @cep-color-purple;
   color: @cep-color-white;
-  // max-width: 880px;
   .width-100();
   padding: 20px;
   .flex(none, center, column);
