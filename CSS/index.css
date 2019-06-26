@@ -326,11 +326,47 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 1000px;
+  height: 600px;
+  position: relative;
+}
+.carousel .left-button,
+.carousel .right-button {
+  color: #FBFBFB;
+  background-color: #632A50;
+  font-size: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #632A50;
+  background-color: #FBFBFB;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  border: 2px solid #632A50;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
 }
 .carousel img {
   display: none;
   width: 80%;
+  height: 500px;
+  overflow: hidden;
 }
 .footer {
   font-family: Georgia, 'Times New Roman', Times, serif;

@@ -17,19 +17,17 @@ class Carousel {
         this.leftButton = document.querySelector('.left-button');
 
         // click handlers for right and left button
-        this.rightButton.addEventListener('click', () => this.changeRight());
-        this.leftButton.addEventListener('click', () => this.changeLeft());
+        this.rightButton.addEventListener('click', () => this.changeSlide(1));
+        this.leftButton.addEventListener('click', () => this.changeSlide(-1));
     }
 
-    changeRight() {
+    changeSlide(n) {
         this.images[this.index].style.display = 'none';
-        this.index === this.images.length - 1 ? (this.index=0) : this.index++;
-        this.images[this.index].style.display = 'block';
-    }
-
-    changeLeft() {
-        this.images[this.index].style.display = 'none';
-        this.index === 0 ? (this.index = this.images.length-1) : this.index--;
+        if (n===1) {
+            this.index === (this.images.length-1) ? (this.index = 0) : this.index++;
+        } else {
+            this.index === 0 ? (this.index = this.images.length-1) : this.index--;
+        }
         this.images[this.index].style.display = 'block';
     }
 }

@@ -54,10 +54,10 @@
         .flex(space-between, center, row);
 
         .nav-link {
-          .navLinkStyle(@cep-color-white, @cep-color-light-blue);
+          .linkStyle(@cep-color-white, @cep-color-light-blue);
 
           @media @mobile {
-            .navLinkStyle(@cep-color-purple, @cep-color-white);
+            .linkStyle(@cep-color-purple, @cep-color-white);
           }
         }
       }
@@ -67,7 +67,7 @@
 
         .nav-link-log-in {
           padding: 30px;
-          .navLinkStyle(@cep-color-white, @cep-color-dark-blue);
+          .linkStyle(@cep-color-white, @cep-color-dark-blue);
 
           &:hover {
             transition-duration: 1s;
