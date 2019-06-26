@@ -290,12 +290,13 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 0 auto;
+  padding-bottom: 50px;
 }
 .about-us-container .about-us-header {
   font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-transform: uppercase;
-  background: linear-gradient(to right, black, #848484);
+  background: linear-gradient(to right, #632A50, #1E80AA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -303,11 +304,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  position: relative;
-  width: 100px;
-  height: 100px;
+  width: auto;
+}
+.about-us-container .about-us-images img {
+  width: 150px;
 }
 .footer {
   background-color: #632A50;

@@ -131,32 +131,30 @@
 
 .about-us-container {
   .flex(center, center, column);
-  // flex-wrap: wrap;
-  margin: 0 auto;
+  padding-bottom: 50px;
 
   .about-us-header {
-    // margin-bottom: 5%;
     font-size: 2rem;
+    // color: @cep-color-purple;
+    .fontFamily();
     text-transform: uppercase;
-    background: linear-gradient(to right, black, #848484);
+    background: linear-gradient(to right, @cep-color-purple, @cep-color-light-blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .about-us-images {
-    .flex(center, center, column);
+    .flex(center, center);
     flex-wrap: wrap;
-    position: relative;
-    width: 100px;
-    height: 100px;
+    width: auto;
+    // position: relative;
 
-    // img {
-    //   width: 100px;
-    //   height: 100px;
-    // }
+    img {
+      width: 150px;
+    }
+
   }
 }
-
 
 .footer {
   background-color: @cep-color-purple;
