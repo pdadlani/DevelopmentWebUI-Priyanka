@@ -127,6 +127,11 @@ img {
   background-color: #082A47;
   color: #FBFBFB;
 }
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav-all .log-in .nav-link-log-in {
+    padding: 20px;
+  }
+}
 .main-navigation .nav-container .nav-all .log-in .nav-link-log-in:hover {
   background-color: #FBFBFB;
   color: #082A47;
@@ -146,7 +151,7 @@ img {
   transform: translate(-50%, -50%);
   color: #632A50;
   background-color: #FFFFFF80;
-  padding: 20px;
+  padding: 20px 60px 20px 20px;
   border-radius: 10px;
 }
 .main-container .img-and-text .img-text h1 {
@@ -196,10 +201,21 @@ img {
   flex-direction: row;
   padding-top: 10px;
 }
+@media (max-width: 500px) {
+  .main-container .content .content-img-text {
+    display: block;
+  }
+}
 .main-container .content .content-img-text .content-img {
   width: 50%;
   border: 1px solid #632A50;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .main-container .content .content-img-text .content-img {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 .main-container .content .content-img-text p {
   padding: 20px;
@@ -209,6 +225,14 @@ img {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .main-container .content .middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .footer {
   background-color: #632A50;
@@ -237,11 +261,6 @@ img {
   position: relative;
   overflow: hidden;
   margin-top: 16px;
-}
-@media (min-width: 1200px) {
-  .carousel {
-    width: 1200px;
-  }
 }
 .carousel .left-button,
 .carousel .right-button {
