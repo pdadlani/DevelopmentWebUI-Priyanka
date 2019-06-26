@@ -285,6 +285,30 @@ img {
     flex-direction: column;
   }
 }
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.about-us-container .about-us-header {
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, black, #848484);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-us-container .about-us-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
 .footer {
   background-color: #632A50;
   color: #FBFBFB;

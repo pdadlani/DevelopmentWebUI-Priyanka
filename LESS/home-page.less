@@ -127,6 +127,37 @@
   .flexTablet();
 }
 
+// team images styling
+
+.about-us-container {
+  .flex(center, center, column);
+  // flex-wrap: wrap;
+  margin: 0 auto;
+
+  .about-us-header {
+    // margin-bottom: 5%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, black, #848484);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .about-us-images {
+    .flex(center, center, column);
+    flex-wrap: wrap;
+    position: relative;
+    width: 100px;
+    height: 100px;
+
+    // img {
+    //   width: 100px;
+    //   height: 100px;
+    // }
+  }
+}
+
+
 .footer {
   background-color: @cep-color-purple;
   color: @cep-color-white;
