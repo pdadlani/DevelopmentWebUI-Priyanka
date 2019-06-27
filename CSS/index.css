@@ -115,6 +115,15 @@ img {
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  .main-navigation .nav-container .nav-all .nav-links {
+    display: flex;
+    justify-content: inherit;
+    align-items: inherit;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}
 .main-navigation .nav-container .nav-all .nav-links .nav-link {
   color: #FBFBFB;
   background-color: #1E80AA;
@@ -165,6 +174,7 @@ img {
 @media (max-width: 500px) {
   .main-container .img-and-text {
     background-image: none;
+    height: 400px;
   }
 }
 .main-container .img-and-text .img-text {
@@ -183,6 +193,11 @@ img {
 .main-container .img-and-text .img-text h1 {
   font-size: 4.5rem;
   z-index: 1;
+}
+@media (max-width: 500px) {
+  .main-container .img-and-text .img-text h1 {
+    font-size: 3rem;
+  }
 }
 .main-container .img-and-text .img-text .btn-quote {
   font-size: 2rem;

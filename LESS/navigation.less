@@ -53,6 +53,11 @@
       .nav-links {
         .flex(space-between, center, row);
 
+        @media @mobile {
+          .flex(inherit, inherit, column);
+          padding: 1.5rem;
+        }
+
         .nav-link {
           .linkStyle(@cep-color-white, @cep-color-light-blue);
 
