@@ -3,7 +3,7 @@
 
 <head>
   <title>Corporate Event Planner</title>
-  <link rel="icon" href="./images/lambda.jpg">
+  <link rel="icon" href="./images/darkGlass.png">
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -15,7 +15,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="/components/Tabs/Tabs.js" async></script>
+  <script src="/components/tabs.js" async></script>
   <script src="index.js" async></script>
   <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow|Vollkorn+SC|Yrsa&display=swap" rel="stylesheet">
 </head>
@@ -44,7 +44,7 @@
     </nav>
   </header>
 
-  <section class='contact'>
+  <section class='contact p-5'>
     <!-- <form method="post" action="#">
       <div class="row gtr-uniform">
         <div class="input col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
@@ -54,18 +54,25 @@
       </div>
     </form> -->
     <form action="">
-      <label for=""> First Name:</label>
-      <input class='firstName' type='text' name='firstname' value='' placeholder="Your First Name">
-      <label for="">Last Name:</label>
-      <input class='lastName' type='text' name='lastname' value='' placeholder="Your Last Name">
-      <label for="">Email:</label>
-      <input class='email' type='text' name='email' value='' placeholder="Your Email Address">
-      <input class='formSubmit' type='submit' value="Submit Your Info">
+      <div class="form-item p-3 p-md-2">
+        <label for=""> First Name:</label>
+        <input class='firstName' type='text' name='firstname' value='' placeholder="Your First Name">
+      </div>
+      <div class="form-item p-3 p-md-2">
+        <label for="">Last Name:</label>
+        <input class='lastName' type='text' name='lastname' value='' placeholder="Your Last Name">
+      </div>
+      <div class="form-item p-3 p-md-2">
+        <label for="">Email:</label>
+        <input class='email' type='text' name='email' value='' placeholder="Your Email Address">
+      </div>
+      <div class="form-item p-3 p-md-2">
+        <input class='formSubmit' type='submit' value="Submit Your Info">
+      </div>
     </form>
   </section>
 
   <footer class="footer home-footer">
-    <a class="nav-link" href="contact.html">Contact</a>
     <p class='far fa-copyright'> Corporate Event Planning 2019!</p>
   </footer>
 </body>

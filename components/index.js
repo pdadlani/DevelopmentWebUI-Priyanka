@@ -24,7 +24,7 @@ document.addEventListener('dragend', function (event) {
 
 // changes items in the form - background color to aqua when wheeling over it
 // - text color to pink when typing
-document.querySelectorAll('input').forEach(function (data) {
+document.querySelectorAll('.firstName').forEach(function (data) {
   // data.addEventListener('wheel', changeBackAqua);
   data.addEventListener('keydown', changeColorPurple);
   //data.addEventListener('click', alert);

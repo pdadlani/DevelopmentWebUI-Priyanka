@@ -5,8 +5,8 @@
 @import './global.less';
 @import './navigation.less';
 @import './home-page.less';
-@import './components/Tabs/Tabs';
-@import './components/Carousel/Carousel';
+@import './about-us.less';
+@import './components/carousel/carousel';
 @import './footer.less';
 
 
@@ -53,7 +53,7 @@ body {
 	font-size: 3.5rem;
 	.fontFamilyH();
 	padding-top: 30px;
-	color: @cep-color-dark-blue;
+	color: @cep-color-grey;
 
 	@media @tablet {
 		font-size: 2.5rem;
@@ -61,5 +61,29 @@ body {
 
 	@media @mobile {
 		font-size: 1.75rem;
+	}
+}
+
+.contact {
+	.flex(center, center);
+
+	form {
+		.flex(center, center, column);
+
+		.form-item {
+			font-size: 1.5rem;
+			.fontFamilyH();
+			// label {
+			// 	font-size: 2rem;
+			// }
+
+			@media @tablet {
+				font-size: 1.3rem;
+			}
+
+			@media @mobile {
+				font-size: 1rem;
+			}
+		}
 	}
 }

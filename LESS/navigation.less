@@ -15,6 +15,10 @@
     padding: 10px;
 
 
+    @media @tablet {
+      max-width: 100%;
+    }
+
     @media @mobile {
       .flex(space-between, center, column);
     }
@@ -60,6 +64,7 @@
 
         .nav-link {
           .linkStyle(@cep-color-white, @cep-color-light-blue);
+          white-space: nowrap;
 
           @media @mobile {
             .linkStyle(@cep-color-purple, @cep-color-white);
@@ -73,13 +78,13 @@
         .nav-link-log-in {
           padding: 30px;
           .linkStyle(@cep-color-white, @cep-color-dark-blue);
+          white-space: nowrap;
 
           &:hover {
             transition-duration: 1s;
           }
-
           @media @mobile {
-            padding: 20px;
+            padding: 15px;
           }
         }
       }
