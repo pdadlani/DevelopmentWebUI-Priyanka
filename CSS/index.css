@@ -300,6 +300,16 @@ img {
     flex-direction: column;
   }
 }
+.footer {
+  background-color: #632A50;
+  color: #FBFBFB;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+}
 .about-us-container {
   display: flex;
   justify-content: center;
@@ -315,6 +325,10 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.about-us-container .about-us-intro {
+  color: #1E80AA;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .about-us-container .about-us-images {
   display: flex;
   justify-content: center;
@@ -323,18 +337,31 @@ img {
   flex-wrap: wrap;
   width: auto;
 }
+.about-us-container .about-us-images .info-link {
+  padding: 20px 25px;
+  cursor: pointer;
+}
 .about-us-container .about-us-images img {
   width: 150px;
 }
-.footer {
-  background-color: #632A50;
-  color: #FBFBFB;
+.about-us-container .about-us-content {
   width: 100%;
-  padding: 20px;
+  height: 300px;
   display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+.about-us-container .about-me-content {
+  display: none;
+  width: 75%;
+}
+.about-us-container .about-me-content .name-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.about-us-container .about-me-selected {
+  display: flex;
 }
 .carousel {
   display: flex;
