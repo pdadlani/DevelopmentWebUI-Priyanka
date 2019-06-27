@@ -9,8 +9,16 @@
     flex-direction: column;
   }
 }
-.fontFamily {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.fontFamilyM {
+  font-family: 'Montserrat', sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+.fontFamilyP {
+  font-family: 'Pragati Narrow', sans-serif;
+}
+.fontFamilyH {
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
 }
 /* Set every element's box-sizing to border-box */
 * {
@@ -21,14 +29,16 @@ html {
 }
 html,
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Pragati Narrow', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
 }
 h1 {
   font-size: 4rem;
@@ -45,7 +55,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
-  font-family: 'Yrsa', serif;
+  font-family: 'Pragati Narrow', sans-serif;
   color: #FBFBFBEE;
 }
 img {
@@ -66,7 +76,9 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
   padding: 10px;
 }
 @media (max-width: 500px) {
@@ -178,7 +190,7 @@ img {
   }
 }
 .main-container .img-and-text .img-text {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Pragati Narrow', sans-serif;
   max-width: 1140px;
   margin: 0 auto;
   position: absolute;
@@ -211,7 +223,7 @@ img {
   color: #FBFBFB;
 }
 .main-container .motto {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif, Georgia, 'Times New Roman', Times, serif;
   color: #4D545D;
 }
 @media (max-width: 800px) {
@@ -223,10 +235,10 @@ img {
   }
 }
 .main-container .motto h3 {
-  margin: 0 auto;
-  font-weight: bold;
   font-size: 2.5rem;
   font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
 }
 .main-container .motto h4 {
   font-size: 1.3rem;
@@ -319,15 +331,16 @@ img {
 }
 .about-us-container .about-us-header {
   font-size: 2rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #632A50;
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
   text-transform: uppercase;
-  background: linear-gradient(to right, #632A50, #1E80AA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding-bottom: 20px;
 }
 .about-us-container .about-us-intro {
   color: #1E80AA;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Pragati Narrow', sans-serif;
 }
 .about-us-container .about-us-images {
   display: flex;
@@ -344,24 +357,37 @@ img {
 .about-us-container .about-us-images img {
   width: 150px;
 }
+.about-us-container .about-us-images img:hover {
+  transform: scale(1.3);
+  transition-duration: 1s;
+}
 .about-us-container .about-us-content {
   width: 100%;
   height: 300px;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
 }
 .about-us-container .about-me-content {
   display: none;
   width: 75%;
+  font-family: 'Pragati Narrow', sans-serif;
+  font-size: 1.8rem;
 }
 .about-us-container .about-me-content .name-title {
-  font-size: 24px;
+  font-size: 2.3rem;
+  color: #1E80AA;
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
   font-weight: bold;
-  padding-bottom: 10px;
+}
+.about-us-container .about-me-content a {
+  padding: 10px;
 }
 .about-us-container .about-me-selected {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .carousel {
   display: flex;
@@ -409,7 +435,9 @@ img {
   overflow: hidden;
 }
 .footer {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
 }
 .footer .nav-link {
   color: #FBFBFB;
@@ -548,5 +576,23 @@ body {
   flex-direction: column;
   background-color: #FBFBFB;
   color: #082A47;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Pragati Narrow', sans-serif;
+}
+.portfolio-header h3 {
+  font-size: 3.5rem;
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
+  padding-top: 30px;
+  color: #082A47;
+}
+@media (max-width: 800px) {
+  .portfolio-header h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .portfolio-header h3 {
+    font-size: 1.75rem;
+  }
 }

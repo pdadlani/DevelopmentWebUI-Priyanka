@@ -46,5 +46,20 @@ body {
   .flex(none, center, column);
 	background-color: @cep-color-white;
   color: @cep-color-dark-blue;
-  .fontFamily();
+  .fontFamilyP();
+}
+
+.portfolio-header h3 {
+	font-size: 3.5rem;
+	.fontFamilyH();
+	padding-top: 30px;
+	color: @cep-color-dark-blue;
+
+	@media @tablet {
+		font-size: 2.5rem;
+	}
+
+	@media @mobile {
+		font-size: 1.75rem;
+	}
 }

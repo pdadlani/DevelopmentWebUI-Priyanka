@@ -4,7 +4,6 @@ class Carousel {
     constructor(image) {
         this.image = image;
         this.images = document.querySelectorAll('.carousel img');
-        // console.log(this.images);
 
         // create current index
         this.index = 0;
@@ -36,7 +35,6 @@ class Carousel {
 
 // 1. Reference to all images of carousel
 let carouselImages = document.querySelectorAll('.carousel img');
-// console.log(carouselImages);
 
 // 2. iterate over the DOM NodeList (using .forEach()) and return new instance of Carousel with each image as parameter
 carouselImages.forEach(image => new Carousel(image));
