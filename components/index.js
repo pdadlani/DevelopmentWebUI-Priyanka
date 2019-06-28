@@ -3,6 +3,7 @@ const changeColorPurple = function (event) {
   event.target.style.color = '#632A50';
 }
 
+
 // // Scale content/images
 // const scale = function (event, n) {
 //   event.target.style.transform = `scale(${n})`;
@@ -24,7 +25,7 @@ document.addEventListener('dragend', function (event) {
 
 // changes items in the form - background color to aqua when wheeling over it
 // - text color to pink when typing
-document.querySelectorAll('.firstName').forEach(function (data) {
+document.querySelectorAll('.formInfo').forEach(function (data) {
   // data.addEventListener('wheel', changeBackAqua);
   data.addEventListener('keydown', changeColorPurple);
   //data.addEventListener('click', alert);

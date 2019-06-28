@@ -66,8 +66,21 @@
           .linkStyle(@cep-color-white, @cep-color-light-blue);
           white-space: nowrap;
 
+          @media @tablet {
+            // font-size:.8rem;
+            padding: 5px;
+          }
           @media @mobile {
             .linkStyle(@cep-color-purple, @cep-color-white);
+          }
+        }
+
+        .nav-link-selected {
+          background-color: @cep-color-purple;
+
+          @media @mobile {
+            background-color: @cep-color-grey;
+            color: @cep-color-white;
           }
         }
       }
