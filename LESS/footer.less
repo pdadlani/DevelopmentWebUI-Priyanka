@@ -1,0 +1,23 @@
+//footer styling
+.footer {
+  .fontFamilyH();
+
+  .nav-link {
+    color: @cep-color-white;
+    font-size: 1.3rem;
+
+    &:hover {
+      background-color: @cep-color-white;
+      color: @cep-color-light-blue;
+    }
+
+    @media @mobile {
+      .linkStyle(@cep-color-white, @cep-color-purple);
+    }
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+

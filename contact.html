@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Corporate Event Planner</title>
+  <link rel="icon" href="./images/darkGlass.png">
+  <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css">
+
+  <!-- required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="/components/tabs.js" async></script>
+  <script src="/components/about-us.js" async></script>
+  <script src="components/index.js" async></script>
+  <link href="https://fonts.googleapis.com/css?family=Pragati+Narrow|Vollkorn+SC|Yrsa&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER COMPONENT -->
+  <header class="main-navigation">
+    <nav class="container nav-container">
+      <div class='nav-img-container'>
+        <a href="index.html">
+          <img class='nav-logo logo-dark' alt='logo' src='images/darkGlass.png'>
+          <img class='nav-logo logo-light' alt='logo' src='images/whiteGlass.png'>
+        </a>
+      </div>
+      <div class="nav-all">
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="about-us.html">About Us</a>
+          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </div>
+        <div class="log-in">
+          <a class="nav-link-log-in" href="https://corporate-event-planner.netlify.com/">Log In</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class='contact p-5'>
+    <!-- <form method="post" action="#">
+      <div class="row gtr-uniform">
+        <div class="input col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+        <div class="input col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+        <div class="input col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+        <button><input type="submit" value="Send Message" class="primary" /></button>
+      </div>
+    </form> -->
+    <form action="">
+      <div class="form-item p-3 p-md-2">
+        <div class="form-title-field col-lg-4">
+          <label for=""> First Name:</label>
+        </div>
+        <div class="form-title-field col-lg-4">
+          <input class='formInfo' type='text' name='firstname' value='' placeholder="Your First Name">
+        </div>
+      </div>
+      <div class="form-item p-3 p-md-2">
+        <div class="form-title-field col-lg-4">
+          <label for="">Last Name:</label>
+        </div>
+        <div class="form-title-field col-lg-4">
+          <input class='formInfo' type='text' name='lastname' value='' placeholder="Your Last Name">
+        </div>
+      </div>
+      <div class="form-item p-3 p-md-2">
+        <div class="form-title-field col-lg-4">
+          <label for="">Email:</label>
+        </div>
+        <div class="form-title-field col-lg-4">
+          <input class='formInfo' type='text' name='email' value='' placeholder="Your Email Address">
+        </div>
+      </div>
+      <div class="form-item p-3 p-md-2">
+        <div class="form-title-field col-lg-7">
+          <label for="">What Can We Help You Plan?</label>
+        </div>
+        <div class="form-title-field col-lg-4">
+          <input class='formInfo' type='text' name='event-type' value='' placeholder="Your Event Type">
+        </div>
+      </div>
+      <div class="form-item p-3 p-md-2">
+        <input class='formSubmit' type='submit' value="Submit Your Info">
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer home-footer">
+    <p class='nav-link'>Thank you!</p>
+    <p class='far fa-copyright'> Corporate Event Planning 2019!</p>
+  </footer>
+</body>
+</html>

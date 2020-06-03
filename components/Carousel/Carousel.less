@@ -1,0 +1,41 @@
+.carousel {
+  .flex(center, center);
+  // margin: 0 auto;
+  // height: 600px;
+  position: relative;
+
+  .left-button, .right-button {
+    .linkStyle(@cep-color-white, @cep-color-purple);
+    font-size: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    // cursor: pointer;
+    .flex(center);
+
+    &:hover {
+      border: 2px solid @cep-color-purple;
+    }
+  }
+
+  .left-button {
+    top: 50%; 
+    left: 25px;
+    transform: translate(0, -50%);
+  }
+
+  .right-button {
+    top: 50%; 
+    right: 25px;
+    transform: translate(0, -50%);
+  }
+
+  img {
+    display: none;
+    width: 80%;
+    // height: 500px;
+    overflow: hidden;
+    // height: 600px;
+  }
+}

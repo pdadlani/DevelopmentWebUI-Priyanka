@@ -1,0 +1,145 @@
+.main-container {
+
+  .img-and-text {
+    background-image: url("../images/alcohol-bar.jpg");
+    // background-color: #cccccc;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+
+    @media @mobile {
+      background-image: none;
+      height: 400px;
+    }
+
+    .img-text {
+      .fontFamilyP();
+      max-width: 1140px;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: @cep-color-white;
+      background-color: @cep-color-dark-blue-transparent;
+      padding: 60px;
+      border-radius: 10px;
+
+      h1 {
+        font-size: 4.5rem;
+        z-index: 1;
+
+        @media @mobile {
+          font-size: 3rem;
+        }
+      }
+
+      .btn-quote {
+        font-size: 2rem;
+        color: @cep-color-dark-blue;
+        background-color: @cep-color-grey;
+        border-radius: 2%;
+        padding: 10px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: @cep-color-purple;
+          color: @cep-color-white;
+        }
+      }
+    }
+  }
+
+  .motto {
+    .fontFamilyM();
+    color: @cep-color-grey;
+    .flexTablet();
+
+    h3 {
+      font-size: 2.5rem;
+      .fontFamilyH();
+    }
+
+    h4 {
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+  }
+  .content {
+    // max-width: 1140px;
+    margin: 0 auto;
+    padding: 80px 0px;
+  
+    h2 {
+      // background-color: @cep-color-grey;
+      // color: @cep-color-white;
+      .fontFamilyH();
+      padding: 10px;
+      border-radius: 5px;
+      color: @cep-color-white;
+      font-size: 2.5rem;
+
+      &:last-child {
+        color: @cep-color-grey;
+      }
+
+    }
+
+    .content-img-text {
+      .flex(space-evenly, center, row);
+      padding-top: 10px;
+
+      @media @tablet {
+        display: block;
+      }
+      
+      .content-img {
+        width: 50%;
+        border-radius: 5px;
+
+        @media @tablet {
+          width: @widthAuto;
+          margin: 0 auto;
+        }
+      }
+
+      p {
+        padding: 20px;
+        .fontFamilyP();
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.first {
+  .flex(space-evenly, center, row-reverse);
+  background-color: @cep-color-light-blue;
+  margin-left: 0;
+}
+
+.second {
+  background-color: @cep-color-grey;
+  .flexTablet();
+}
+
+.third {
+  p {
+    color: @cep-color-grey;
+  }
+  .flexTablet();
+}
+
+.footer {
+  background-color: @cep-color-purple;
+  color: @cep-color-white;
+  .width-100();
+  padding: 20px;
+  .flex(none, center, column);
+  flex-shrink: 0;
+  // position: absolute;
+  // bottom: 0;
+}

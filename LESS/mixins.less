@@ -1,0 +1,47 @@
+// File for all css mixins
+
+// width 100%
+.width-100 {
+  width: 100%;
+}
+
+// flex: justify-content, align-items, flex-direction
+.flex(@jc: none, @ai: none, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
+}
+
+// navigation links styling - color
+.linkStyle (@linkColor, @linkBackgroundColor) {
+  color: @linkColor;
+  background-color: @linkBackgroundColor;
+
+  &:hover {
+    color: @linkBackgroundColor;
+    background-color: @linkColor;
+  }
+}
+
+// media - tablet size flex
+.flexTablet {
+  @media @tablet {
+    .flex(space-evenly, center, column);
+  }
+}
+
+// font selection
+.fontFamilyM {
+  font-family: 'Montserrat', sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+.fontFamilyP {
+  font-family: 'Pragati Narrow', sans-serif;
+}
+
+.fontFamilyH {
+  font-family: 'Vollkorn SC', serif;
+  margin: 0 auto;
+  font-weight: bold;
+}
